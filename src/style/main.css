@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#in {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#palete {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3f3735;
+}
+
+#angry {
+  width: 30px;
+  height: 30px;
+  animation: mover 1s infinite alternate;
+  transition: ease-in-out;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.about {
+  right: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  animation-name: about;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes about {
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: -5px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.btnType-A {
+  width: 5vw;
+  height: 6vh;
+  font-size: 1.3vw;
+  font-family: "Kirang Haerang", cursive;
+  opacity: 0.9;
+  border: 0;
+  padding: 0;
+  margin: 10px;
+  background-image: linear-gradient(
+    180deg,
+    #f05766 0%,
+    #f3766a 45%,
+    #ffda6b 100%
+  );
+}
+
+.st0 {
+  fill: url(#SVGID_1_);
+}
+
+.st1 {
+  fill: #262c38;
+}
+
+.st2 {
+  fill: none;
+  stroke: #262c38;
+  stroke-width: 60;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.skill1 {
+  position: absolute;
+  height: 50px;
+  bottom: 1vh;
+  font-size: 30px;
+  border: none;
+  background: #404040;
+  color: #ffffff;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.skill1:hover {
+  user-select: none;
+  cursor: pointer;
+  color: #f8f8f8;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: none;
+  transition: all 0.3s ease 0s;
+  background-color: #ff0f23;
+}
+
+#timer{
+  position: absolute;
+  top: 1vh;
+  width: 100px;
+  height: 60px;
+  background-color: #505050;
+}
